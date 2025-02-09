@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug</title>
+</head>
+<body>
+  <div id="myDiv">
+    This text will not be displayed if the bug is present.
+  </div>
+  <script>
+    //Bug: Incorrect use of innerHTML with a partially malformed string.
+    document.getElementById("myDiv").innerHTML = "<p>This is a paragraph.<p>Another paragraph<p>"; //Missing closing tags
+  </script>
+</body>
+</html>
