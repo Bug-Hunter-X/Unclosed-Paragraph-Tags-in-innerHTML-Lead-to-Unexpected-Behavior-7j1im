@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug Solution</title>
+</head>
+<body>
+  <div id="myDiv">
+    This text will now be displayed correctly.
+  </div>
+  <script>
+    //Solution: Properly close all HTML tags.
+    document.getElementById("myDiv").innerHTML = "<p>This is a paragraph.</p><p>Another paragraph.</p>";
+  </script>
+</body>
+</html>
